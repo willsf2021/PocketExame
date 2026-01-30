@@ -1,0 +1,31 @@
+@startuml
+title Diagrama de Atividades - ENEM Pocket Coach
+
+start
+
+:Usuário acessa a plataforma;
+
+:Seleciona matéria;
+:Seleciona tempo disponível (5, 10 ou 15 min);
+
+if (Tipo de atividade?) then (Questão)
+    :Gerar questão estilo ENEM;
+else (Conceito)
+    :Gerar conceito resumido;
+    :Gerar mini questão;
+endif
+
+:Exibir atividade ao usuário;
+
+:Usuário responde;
+
+:Enviar resposta para IA;
+
+:IA corrige resposta;
+:IA gera explicação\nno nível do usuário;
+:IA gera lembrete mental;
+
+:Exibir correção\ne feedback;
+
+stop
+@enduml

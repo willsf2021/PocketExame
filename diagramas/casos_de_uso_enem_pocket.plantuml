@@ -1,0 +1,11 @@
+@startuml
+
+:Usuário: --> (escolherMateria)
+:Usuário: --> (tempoDisponivel)
+:Usuário: --> (responderQuestao)
+
+"Escolher a matéria" as (escolherMateria)
+"Informar o tempo disponível" as (tempoDisponivel)
+"Responder a questão" as (responderQuestao)
+
+@enduml

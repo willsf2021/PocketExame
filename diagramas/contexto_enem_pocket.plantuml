@@ -1,0 +1,16 @@
+@startuml
+title Diagrama de Contexto - ENEM Pocket Coach
+
+actor "Usuário (Estudante)" as Usuario
+rectangle "ENEM Pocket Coach" as Sistema
+rectangle "API de IA Gratuita" as IA
+
+Usuario --> Sistema : Seleciona matéria\nSeleciona tempo disponível
+Usuario --> Sistema : Envia resposta
+
+Sistema --> IA : Solicita geração de questão\nou conceito resumido
+IA --> Sistema : Questão / Correção /\nExplicação / Lembrete mental
+
+Sistema --> Usuario : Exibe atividade\nFeedback e explicação
+
+@enduml
