@@ -1,8 +1,8 @@
 @startuml
-title Diagrama de Contexto - ENEM Pocket Coach
+title Diagrama de Contexto - Pocket Coach
 
 actor "Usuário (Estudante)" as Usuario
-rectangle "ENEM Pocket Coach" as Sistema
+rectangle "Pocket Coach" as Sistema
 rectangle "API de IA Gratuita" as IA
 
 Usuario --> Sistema : Seleciona matéria\nSeleciona tempo disponível
