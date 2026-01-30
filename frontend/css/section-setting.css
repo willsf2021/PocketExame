@@ -40,6 +40,10 @@
   gap: 16px;
 }
 
+.study-subject-list-item {
+  text-align: center;
+}
+
 .general-list-item {
   background-color: var(--off-white);
   border: 2px solid var(--border-color);
