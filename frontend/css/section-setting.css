@@ -33,6 +33,20 @@
   text-align: center;
   font-size: 18px;
 }
+.study-subject {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  pointer-events: none;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 
 .study-subject-list {
   display: grid;
@@ -41,6 +55,7 @@
 }
 
 .study-subject-list-item {
+  position: relative;
   text-align: center;
 }
 
@@ -52,6 +67,14 @@
 }
 
 .item-area {
+  position: absolute;
+  inset: 0;
+}
+.item-subject {
+  position: absolute;
+  inset: 0;
+}
+.item-time {
   position: absolute;
   inset: 0;
 }
@@ -68,6 +91,16 @@
 
 .study-area-list-item:hover {
   border-color: var(--border-color-darker);
+}
+
+.subject-active {
+  background-color: rgba(0, 0, 255, 0.212);
+  border: 2px solid blue;
+}
+
+.time-active {
+  background-color: rgba(0, 0, 255, 0.212);
+  border: 2px solid blue;
 }
 
 .active-area-item {

@@ -12,6 +12,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Pocket Exame</title>
+    <style>
+        .box {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.box.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+    </style>
 </head>
 
 <body>
@@ -70,43 +84,21 @@
             <aside class="study-config study-subject">
                 <h3 class="section-title"><i class="ti ti-target-arrow"></i>Matéria Específica</h3>
                 <ul class="study-subject-list">
-                    <!-- It's going to be generate by Javascript, below it's an example for styling -->
-                    <!-- <li class="study-subject-list-item general-list-item">
-                        <span>assunto</span>
-                    </li>
-
-                    <li class="study-subject-list-item general-list-item">
-                        <span>assunto</span>
-                    </li>
-
-                    <li class="study-subject-list-item general-list-item">
-                        <span>assunto</span>
-                    </li>
-
-                    <li class="study-subject-list-item general-list-item">
-                        <span>assunto</span>
-                    </li>
-                    <li class="study-subject-list-item general-list-item">
-                        <span>assunto</span>
-                    </li>
-                    <li class="study-subject-list-item general-list-item">
-                        <span>assunto</span>
-                    </li>
-                    <li class="study-subject-list-item general-list-item">
-                        <span>assunto</span>
-                    </li> -->
                 </ul>
             </aside>
             <aside class="study-config study-time">
                 <h3 class="section-title"><i class="ti ti-clock"></i></i>Tempo de estudo</h3>
                 <ul class="study-time-list">
-                    <li class="study-time-list-item general-list-item">
+                    <li class="study-time-list-item general-list-item" data-time="5">
+                         <div class="item-time" data-class_item="blue-item"></div>
                         <span>5 min</span>
                     </li>
-                    <li class="study-time-list-item general-list-item">
+                    <li class="study-time-list-item general-list-item" data-time="10">
+                         <div class="item-time" data-class_item="blue-item"></div>
                         <span>10 min</span>
                     </li>
-                    <li class="study-time-list-item general-list-item">
+                    <li class="study-time-list-item general-list-item" data-time="15">
+                         <div class="item-time" data-class_item="blue-item"></div>
                         <span>15 min</span>
                     </li>
                 </ul>
